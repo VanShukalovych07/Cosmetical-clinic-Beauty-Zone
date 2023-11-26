@@ -1,1 +1,1 @@
-# cosmetical-clinic-Beauty-Zone-
+# cosmetical-clinic-Beauty-Zone
