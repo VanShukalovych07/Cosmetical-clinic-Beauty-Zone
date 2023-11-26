@@ -1,0 +1,109 @@
+.stars {
+    &__main-star {
+        fill: var(--color-primary-dark);
+        position: relative;
+        top: -50px;
+        right: -220px;
+        transition: 3s;
+        animation-name: main;
+        animation-duration: 2s;
+        width: 40px;
+        height: 40px;
+
+        @media screen and (min-width: $br-tablet) {
+            width: 50px;
+            height: 50px;
+            top: -400px;
+            right: -480px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            width: 64px;
+            height: 64px;
+            top: -400px;
+            right: -750px;
+        }
+    }
+
+    @keyframes main {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__secound-star {
+        display: none;
+        fill: var(--color-primary-blue);
+        position: relative;
+        top: -630px;
+        right: -1150px;
+        transition: 3s;
+        animation-name: secound;
+        animation-duration: 1s;
+
+        @media screen and (min-width: $br-tablet) {
+            width: 32px;
+            height: 32px;
+            display: block;
+            top: -560px;
+            right: -700px;
+
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            width: 40px;
+            height: 40px;
+            top: -630px;
+            right: -1150px;
+        }
+
+    }
+
+    @keyframes secound {
+        0% {
+            transform: skew(0);
+        }
+
+        30% {
+            transform: skew(0.5);
+        }
+
+        100% {
+            transform: skew(1);
+        }
+    }
+
+    &__last-star {
+        display: none;
+        fill: var(--secoundary-color-light-grey);
+        position: relative;
+        top: -420px;
+        right: -1130px;
+        transition: 2s;
+        animation-name: last;
+        animation-duration: 1s;
+
+        @media screen and (min-width: $br-tablet) {
+            display: block;
+            right: -700px;
+        }
+
+        @media screen and (min-width: $br-desktop) {
+            right: -1130px;
+        }
+    }
+
+    @keyframes last {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+}

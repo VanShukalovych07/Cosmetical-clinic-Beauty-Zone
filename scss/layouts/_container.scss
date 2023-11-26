@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: $br-desktop) {
+        padding: 24px;
+    }
+}

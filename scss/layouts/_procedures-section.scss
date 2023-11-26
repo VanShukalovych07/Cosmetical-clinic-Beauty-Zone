@@ -1,0 +1,17 @@
+.procedures-section {
+    &__slider {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    &__container {
+        overflow: hidden;
+
+
+        &__list {
+            display: flex;
+            gap: 16px;
+        }
+    }
+}
